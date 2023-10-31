@@ -1,0 +1,81 @@
+.blockContainer {
+  width: 400px;
+  height: 460px;
+  padding: 0 16px 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  border-radius: 100px;
+  border: 3px solid var(--active);
+  background: rgba(255, 255, 255, 0.12);
+
+  overflow: hidden;
+}
+
+.scrollContainer {
+  overflow-y: scroll;
+  scrollbar-color: var(--active);
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--scrollTrack);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--active);
+    border-radius: 10px;
+  }
+}
+.scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &:first-child {
+    margin-top: 15px;
+  }
+  &:last-child {
+    margin-bottom: 15px;
+  }
+}
+.item {
+  margin: 0 16px 0 0;
+  padding: 30px 0 30px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+
+  border-radius: 100px;
+
+  font-family: "Lexend";
+
+  color: white;
+  background: #1e1231;
+
+  &a:first-child {
+    width: 240px;
+  }
+
+  transition: 0.6s;
+  &:hover {
+    background-color: var(--active);
+  }
+}
+
+.date {
+  color: var(--date);
+  font-feature-settings: "liga" off;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 16px;
+}

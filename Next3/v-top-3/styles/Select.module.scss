@@ -1,0 +1,25 @@
+.selectUser {
+  width: 100%;
+  padding: 18px;
+
+  border: 2px solid var(--active);
+  border-radius: 2rem;
+
+  background-color: var(--backgrInputs);
+  color:white;
+
+  font-family: "Lexend";
+  font-size: 15px;
+
+  appearance: none;
+}
+.selectLanguage{
+  padding: 5px 20px;
+  color: white;
+  background-color: var(--contactsFont);
+
+  border: none;
+  border-radius: 4px;
+
+  
+}

@@ -1,0 +1,50 @@
+.commissionsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.commissionList{
+    margin: 40px 0 0px 0;
+}
+.offerItem {
+    width: 550px;
+    height: 150px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    border: 4px solid var(--active);
+    border-radius: 3rem;
+
+    cursor: pointer;
+    
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      color: var(--active);
+      transition:  0.5s;
+    }
+    p {
+      font-size: 13px;
+      transition:  0.5s ease;
+    }
+    h4{
+        transition:  0.5s ease;
+    }
+  
+    &:hover {
+      background-color: var(--active);
+      color: var(--backgrInputs);
+  
+      h2 {
+        color: var(--backgrInputs);
+      }
+    }
+  }
+  

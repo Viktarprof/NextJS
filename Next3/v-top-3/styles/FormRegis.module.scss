@@ -1,0 +1,32 @@
+.form{
+    width: 500px;
+
+    background-color: rgb(211, 209, 209);
+    border-radius: 0 0 10px 10px;
+    background-color: whitesmoke;
+ 
+}
+.titleInput{
+    color: black;
+    text-align: left;
+    padding: 25px 0 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    span{
+        color: var(--active);
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+.warning_text{
+    color: red;
+    font-size: 15px;
+
+    margin-top: 5px;
+}
+
+.checkboxContainer{
+    width: 450px;
+    display: flex;
+    align-items: center;
+}

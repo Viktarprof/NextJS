@@ -1,0 +1,28 @@
+.contactsUs {
+  width: 950px;
+  margin-bottom: 50px;
+  padding: 20px 50px 15px 50px;
+  border: 2px solid var(--active);
+  border-radius: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: var(--contactsFont);
+
+  font-family: "Lexend";
+
+  .headerContact {
+    font-size: 2rem;
+    color: var(--active);
+    margin-bottom: 10px;
+  }
+  .span {
+    font-size: 1.6rem;
+    color: var(--contactsSpan);
+    text-align: center;
+  }
+}

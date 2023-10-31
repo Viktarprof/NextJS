@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.homeContainer {
+  width: 100%;
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+  position: relative;
+  z-index: 1;
+}
+.blockText {
+  width: 555px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.titleText {
+  font-family: "Lexend";
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px;
+  color: var(--active);
+}
+.span {
+  color: white;
+}
+.blockText p {
+  color: var(--gray);
+  font-family: "Lexend";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}

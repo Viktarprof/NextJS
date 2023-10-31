@@ -1,0 +1,48 @@
+.carouselContainer {
+  height: 100%;
+  width: 350px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  position: absolute;
+
+  z-index: var(--z-index-carouselContainer);
+  overflow: hidden;
+  
+}
+
+.carouselList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.line1,
+.line2,
+.line3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  justify-content: space-evenly;
+  animation: scrollAnimation 30s linear infinite;
+
+  @keyframes scrollAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.line1,
+.line3 {
+  animation-direction: reverse;
+}
+
+

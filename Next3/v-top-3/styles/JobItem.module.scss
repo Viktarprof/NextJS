@@ -1,0 +1,77 @@
+.jobItem {
+  height: 650px;
+  width: 800px;
+  position: relative;
+
+  margin: 170px 0 100px 0;
+  padding: 50px 30px 50px 30px;
+
+  border: 3px solid var(--active);
+  border-radius: 2rem;
+
+  background-color: var(--backgrJobs);
+
+  .scrollContainer {
+    width: 730px;
+    height: 330px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    scrollbar-color: var(--active);
+
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--scrollTrack);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--active);
+      border-radius: 10px;
+    }
+  }
+  .headerJob {
+    height: 100px;
+    margin-top: 30px;
+
+    border-radius: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    background-color: var(--active);
+
+    .line {
+      width: 1.5px;
+      height: 70px;
+      background-color: white;
+    }
+  }
+  h4 {
+    text-align: left;
+    margin: 40px 0 40px 0;
+  }
+  li {
+    text-align: left;
+    font-size: 15px;
+  }
+}
+
+.jobItem {
+  svg {
+    font-size: 35px;
+    color: var(--active);
+    position: absolute;
+    right: -30px;
+    top: -25px;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
